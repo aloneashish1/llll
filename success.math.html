@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Successful</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      font-family: 'Segoe UI', sans-serif;
+      color: #00ffcc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      animation: glow 1.5s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00ffcc; }
+      to { text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff; }
+    }
+
+    a.download-btn {
+      background: linear-gradient(135deg, #00ffcc, #0099ff);
+      padding: 15px 30px;
+      color: #000;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    a.download-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #00cc99, #0077cc);
+    }
+
+    .note {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #cccccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 Payment Successful!</h1>
+  <a href="math.vvi.pdf" class="download-btn" download>Download Notes</a>
+  <p class="note">Thank you for your purchase! Your download will begin immediately.</p>
+
+</body>
+</html>
